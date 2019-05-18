@@ -11,7 +11,7 @@ import numpy as np
 from sklearn.externals import joblib
 import os
 def predict(filename,use_mid=False):
-    root=(os.path.abspath(os.path.join('', '..')))+os.sep+"Predict"
+    root="Predict"
     filename=root+os.sep+filename
     
     Decoder=joblib.load(".\\Int_to_Word_Dictionary.pkl")
