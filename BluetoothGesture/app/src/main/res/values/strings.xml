@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Gesture</string>
+    <string name="device_list">PAIRED DEVICES LIST</string>
+    <string name="btn_scanning">SCAN</string>
+    <string name="device_name">NAME</string>
+    <string name="uuid_number">UUID</string>
+    <string name="toggle_graph">SHOW GRAPH</string>
+    <string name="toggle_data">SHOW DATA</string>
+    <string name="btn_connect">CONNECT</string>
+    <string name="btn_disconnect">DISCONNECT</string>
+    <string name="no_of_samples">NUMBER OF SAMPLES</string>
+    <string name="name_of_sample">GESTURE WORD</string>
+    <string name="server_response">SERVER RESPONSE</string>
+    <string name="no_samples_recorded">NO. OF SAMPLES RECORDED:</string>
+    <string name="predicted_word">PREDICTED WORD</string>
+    <string name="training_word">TRAINING WORD</string>
+    <string name="train_model">TRAIN MODEL</string>
+    <string name="settings">SETTINGS</string>
+    <string name="clear_data_warning">Dataset once deleted cannot be recoverd.Are you sure you want to clear the DataSet?</string>
+</resources>

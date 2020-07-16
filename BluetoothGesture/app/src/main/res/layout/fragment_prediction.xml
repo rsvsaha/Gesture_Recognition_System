@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.PredictionFragment"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/data_graph_holder"
+        android:gravity="top">
+        <include layout="@layout/view_recorded_data_ui"
+            android:id="@+id/recorded_data_holder" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_holder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:weightSum="100">
+
+        <!-- TODO IMPLEMENT FOR GRAPHING
+        include layout="@layout/data_graph_toggler_ui" /-->
+
+        <include layout="@layout/bluetooth_connector_ui"
+            android:layout_weight="20"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <include layout="@layout/prediction_server_response_ui"
+            android:layout_weight="80"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

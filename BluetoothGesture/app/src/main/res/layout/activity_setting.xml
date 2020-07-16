@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".SettingActivity"
+    android:background="@android:color/holo_green_dark"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:text="Set Server Ip"
+        android:textSize="30sp"
+        android:textColor="@android:color/white"/>
+    <EditText
+        android:id="@+id/ip_field"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:hint="http://192.168.0.43:8090"
+        android:focusedByDefault="false"
+        android:maxLines="1"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="64"></LinearLayout>
+    <Button
+        android:id="@+id/clear_dataset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="CLEAR DATASET "/>
+    <Button
+        android:id="@+id/save_change"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:text="SAVE CHANGES"
+        />
+
+
+</LinearLayout>

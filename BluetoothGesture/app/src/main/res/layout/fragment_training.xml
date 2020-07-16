@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.TrainingFragment"
+    android:weightSum="2">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/data_graph_holder"
+        android:gravity="top">
+        <include layout="@layout/view_recorded_data_ui"
+            android:id="@+id/recorded_data_holder" />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/btn_holder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="100"
+        >
+
+        <!-- TODO IMPLEMENT FOR GRAPHING
+        include layout="@layout/data_graph_toggler_ui" /-->
+
+        <include layout="@layout/bluetooth_connector_ui"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+
+        <include layout="@layout/training_options_ui"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"/>
+        <include layout="@layout/training_server_response_ui"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="15"
+            android:text="@string/train_model"
+            android:id="@+id/train_model"/>.
+    </LinearLayout>
+</LinearLayout>

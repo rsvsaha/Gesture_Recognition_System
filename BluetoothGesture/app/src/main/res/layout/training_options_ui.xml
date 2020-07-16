@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="5">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/training_word"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_green_dark"
+        android:weightSum="5"
+        >
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="@string/name_of_sample"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            />
+        <EditText
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="3"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:id="@+id/sample_word"
+            android:hint="Add Your Word Here"
+            android:textSize="20sp"
+            android:focusable="false"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_green_dark"
+        >
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="@string/no_of_samples"
+            android:textColor="@android:color/white"
+            android:id="@+id/sample_seekbar_label"
+            android:gravity="center_vertical"
+            />
+        <SeekBar
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:progress="20"
+            android:id="@+id/sample_count"
+            />
+
+    </LinearLayout>
+</LinearLayout>

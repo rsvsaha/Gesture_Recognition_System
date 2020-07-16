@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/server_response_holder"
+    android:orientation="vertical"
+    android:weightSum="2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:text="@string/no_samples_recorded"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/no_of_samples_recorded"
+        android:background="@android:color/holo_green_dark"
+        android:layout_weight="1"
+        />
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:text="@string/server_response"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:id="@+id/training_server_response"
+            android:background="@android:color/holo_green_dark"
+        android:layout_weight="1"/>
+</LinearLayout>

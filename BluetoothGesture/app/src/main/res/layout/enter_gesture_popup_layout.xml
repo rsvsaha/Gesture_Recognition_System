@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:gravity="end"
+            android:text="@string/name_of_sample"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:id="@+id/sample_word_popup_edittext"
+            android:hint="Input Gesture Word"
+            android:inputType="text" />
+
+    </TableRow>
+
+
+    <TableRow android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_popup_cancelword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/btn_popup_setword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Word"
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+    </TableRow>
+
+</TableLayout>
